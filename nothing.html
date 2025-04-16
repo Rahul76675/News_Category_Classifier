@@ -1,0 +1,128 @@
+<html>
+<head>
+    <title>News Category Classifier</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f8f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 600px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .input-group label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        .input-group textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .btn {
+            background-color: #4a4aff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .btn i {
+            margin-left: 10px;
+        }
+        .result {
+            background-color: #e0f7f7;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-align: left;
+        }
+        .result p {
+            margin: 0;
+            font-size: 16px;
+        }
+        .result .error {
+            color: #4a4aff;
+        }
+        .categories {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .categories p {
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        .categories .category {
+            display: inline-block;
+            background-color: #e0e0ff;
+            color: #4a4aff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin: 5px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>News Category Classifier</h1>
+        <p>Enter a news article headline and description to predict its category</p>
+        <div class="input-group">
+            <label for="news-text">News Text</label>
+            <textarea id="news-text">Over 4 Million Americans Roll Up Sleeves For O...</textarea>
+        </div>
+        <button class="btn">
+            Predict Category <i class="fas fa-paper-plane"></i>
+        </button>
+        <div class="result">
+            <p>Predicted Category:</p>
+            <p class="error">U.S. NEWS</p>
+        </div>
+        <div class="categories">
+            <p>Available Categories:</p>
+            <span class="category">POLITICS</span>
+            <span class="category">ENTERTAINMENT</span>
+            <span class="category">TRAVEL</span>
+            <span class="category">STYLE & BEAUTY</span>
+            <span class="category">SPORTS</span>
+            <span class="category">PARENTING</span>
+            <span class="category">HEALTHY LIVING</span>
+        </div>
+    </div>
+</body>
+</html>
